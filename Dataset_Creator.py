@@ -1,10 +1,8 @@
 import cv2
 import numpy as np
 import sqlite3
-
 cam=cv2.VideoCapture(0);
 faceDetect=cv2.CascadeClassifier('haarcascade_frontalface_default.xml');
-
 def insertorupdate(id,name,gender,section):
     conn=sqlite3.connect('FaceBase.db')
     cmd='select * from people where id='+str(id)
@@ -19,18 +17,12 @@ def insertorupdate(id,name,gender,section):
     conn.execute(cmd)
     conn.commit()
     conn.close()
-
-
-
-
 id=input('\nEnter your ID :')
 name=input('\nEnter your Name :')
 gender=input('\nEnter your Gender :')
 section=input('\nEnter your Section or Department:')
 insertorupdate(id,name,gender,section)
-
 sn=0                    # sample number
-
 while True:
     ret,img=cam.read()
     gray=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
