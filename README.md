@@ -1,7 +1,6 @@
 # Face Recognition using OPENCV
 
-# This project is all about Attendance Posting
-Using Face Recognition.
+# This project is all about Attendance Posting Using Face Recognition.
 
 This repositary contains the files used for face recognition 
 using opencv.
