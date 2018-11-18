@@ -1,4 +1,4 @@
-# Face Recognition using OPENCV
+# Face Recognition using [OPENCV](https://opencv.org/)
 
 # This project is all about Attendance Posting Using Face Recognition.
 
